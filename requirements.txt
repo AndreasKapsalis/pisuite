@@ -1,0 +1,6 @@
+gpiozero==1.5.1
+picamera==1.13
+pigpio==1.45
+pycparser==2.19
+python-dotenv==0.10.5
+python-telegram-bot==12.3.0
