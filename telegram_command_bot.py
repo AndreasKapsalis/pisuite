@@ -20,6 +20,7 @@ class PiTelegramBotCommandHandler():
         self.updater = Updater(TOKEN, use_context=True)
         dp = self.updater.dispatcher
         self.camera = PiCamera()
+        self.camera.resolution = (1920, 1080)
         self.logger.info("Starting the main command bot...")
         dp.add_handler(CommandHandler("start_sound_sensor", self.start_sound_sensor))
         dp.add_handler(CommandHandler("stop_sound_sensor", self.stop_sound_sensor))
